@@ -158,6 +158,8 @@ else:
     st.markdown('Mean Squared Error in Testing {}'.format(model.mse_test))
     st.markdown('R2 Score in Testing {}'.format(model.r2_test))
     st.markdown('Root Mean Squared Error in Testing {}'.format(model.rmse_test))
+
+    model.plot_distribution_error(data.train_X, data.test_X, data.train_y, data.test_y)
     
     model.plot_single_seq(data.test_X, data.test_y, n_features=data.n_features, index=data.n_steps_out, feature_index=feature_index)
     model.forecast_att(train_X=data.train_X, train_y=data.train_y, feature=feature_index, forecast_range=20)
