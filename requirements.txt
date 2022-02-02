@@ -21,6 +21,7 @@ jinja2
 scikit-learn
 plotly
 gdown
+matplotlib
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
