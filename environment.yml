@@ -2,7 +2,7 @@ name: WSN
 channels:
   - defaults
 dependencies:
-  - python=3.8
+  - python=3.9
   - cudatoolkit
   - cudnn
   - pip
